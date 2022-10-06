@@ -2,3 +2,222 @@
 .container{width: 90%; margin: 2% auto;}
 body{font-family: 'poppins';}
 *{box-sizing: border-box;font-family: 'Poppins';}
+
+#my-container
+{
+    position: relative;
+    background-color: black;
+    height: 400px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    margin-top: 4%;
+}
+
+#photo
+{
+    position:absolute;
+    margin-bottom: 20%;
+    z-index: 1;
+    right: 0;
+    top: -15%;
+
+}
+.paragraph
+{
+    margin-left: 100px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    
+}
+.google-button
+{
+    display: flex;
+}
+.button-section
+{
+    position:absolute;
+    width: fit-content;
+    height: 50px;
+    padding-left: 2%;
+    display: flex;
+    bottom: 10%;
+    
+}
+.button1
+ {
+
+    display: inline-flex;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    border-radius: 10px;
+   
+
+}
+.google-button .button1
+{
+    background-image: linear-gradient(to right,orange,purple);
+    color: white;
+    font-weight: 500;
+    width: 250px;
+    margin-left: 4%;
+}
+.logo-google
+{
+    
+    width: 8%;
+    height: 8x;
+}
+.checkpng
+{
+   width: 40px;
+}
+.chekbuttons
+{
+    position: absolute;
+    display: block;
+    bottom: 25%;
+    left: 3%;
+   
+}
+.first
+{
+    display: flex;
+    align-items: center;
+    margin-left: 7%;
+}
+ .perog
+{
+    color: white;
+    font-size: larger;
+    
+}
+.all1
+{
+    margin-top: 2%;
+}
+.checkpng1
+{
+    width: 4%;
+    margin: 1%;
+}
+@media(max-width : 755px) 
+{
+.container{width: 100%;}
+body{font-family: 'poppins';}
+.button-section
+{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+.button-section .button1{
+    box-sizing: border-box;
+}
+.button-section .button1 :nth-child(2)
+{
+    width: 12px;
+    margin: 5px 0;
+}
+.all1
+{   
+    font-size: larger;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+p.paragraph
+{
+    
+    margin-right: 2%;
+    margin-left: 4%;
+    font-weight:1000;
+}
+ button.button1
+ {
+    margin-left: 0%;
+    margin-right: 0%;
+ }
+ div.first
+ {
+    font-size: smaller;
+ }
+
+}
+@media(max-width : 300px)
+{
+    div.first
+ {
+    font-size: x-small;
+ }
+}
+
+
+
+
+@media(max-width : 1204px) 
+{
+    #photo
+{
+    display: none;
+}
+#my-container
+{
+    position: relative;
+    background-color: black;
+    height: 400px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    margin-top: 4%;
+}
+.logo-google
+{
+    
+    width: 30px;
+    height: 30px;
+}
+.paragraph
+{
+    margin-left: 100px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    
+}
+.button-section
+{
+    position:absolute;
+    /* width: fit-content; */
+    height: 50px;
+    display: flex;
+    bottom: 10%;  
+    align-content: center;
+    margin-right: 20%;
+}
+.button1 :nth-child(1)
+ {
+    margin-right: 30px;
+}
+.all1
+{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.paragraph
+{
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    
+}
+.all1
+{
+    padding: -5%;
+}
+}
