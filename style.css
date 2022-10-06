@@ -2,3 +2,100 @@
 .container{width: 90%; margin: 2% auto;}
 body{font-family: 'poppins';}
 *{box-sizing: border-box;font-family: 'Poppins';}
+
+/* Footer Saad */
+/*gallery footer*/
+footer .gallery{
+    display: grid;
+    padding: 10px;
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+}
+footer .gallery img{
+    width: 100%;
+}
+
+footer .titleLastFooter{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 12px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* link footer */
+footer .items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+}
+footer .items .col{
+    width: 80%;
+}
+footer .items .col2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    justify-content: end;
+}
+footer .icons_Social .icons{
+    padding: 5px;
+    background-color: #fff;
+    color: #000;
+}
+footer .f_paragrapah{
+    line-height: 25px;
+}
+footer ul li,a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+/* Fin Footer Saad  */
+
+/* Tablete */
+@media screen and (min-width:769px) and (max-width:1024px){
+    /* SAAD */
+    footer .items{
+        grid-template-columns: none;
+        padding: 20px;
+    }
+    footer .items .col{
+        text-align: center;
+        margin: auto;
+    }
+    footer .icons_Social{
+        padding-bottom: 30px;
+    }
+    /*Fin SAAD */
+}
+/* Mobile */
+@media screen and (max-width:768px){
+    .container{
+        width: 100%;
+        transition:1s;
+    }
+    /* SAAD */
+    footer .items{
+        grid-template-columns: none;
+        padding: 20px;
+    }
+    footer .items .col{
+        text-align: center;
+        margin: auto;
+    }
+    footer .icons_Social{
+        padding-bottom: 30px;
+    }
+    footer .titleLastFooter{
+        text-align: center;
+        font-size: 10px;
+        padding-top:14px;
+    }
+    /*Fin SAAD */
+}
