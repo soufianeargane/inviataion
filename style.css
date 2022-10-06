@@ -9,10 +9,10 @@ main .items{
     justify-content: space-between;
 }
 main .items .picture{
-    width: 370px;
+    width: 25%;
 }
 main .items .paragraphe .Titre1 {
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     
 }
@@ -23,25 +23,70 @@ main .items .paragraphe p ion-icon{
 
 }
 main .items .paragraphe p .Titre{
-padding-left: 15px;
+    padding-left: 15px;
 
 }
 main .items .paragraphe .para {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
 }
 main .items .paragraphe .start button{
     background-image :linear-gradient(to right, #FB7B30,#A831A5);
     color: white;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border: none;
+    border-radius: 8px;
     
 }
 main .items .paragraphe .start{
     margin: auto;
     text-align: center;
 }
+main .items .paragraphe .para .decoration {
+text-decoration: underline;
+}
+/*Fin Oumaima*/
 
+/*media query Oumaima*/
+/*for Mobile */
+@media (max-width:600px){
+    main .items .picture{
+        display: none;
+    }
+    main .items .paragraphe{
+        font-size: 20px;
+        text-align: center;
+        
+    }
+   
+    main .items .paragraphe .start button{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media (min-width:601px) and (max-width:1200px){
+    
+    main .items{
+        justify-content: center;
+    }
+    main .items .picture {
+        display: none;
+    }
+    
+    main .items .paragraphe {
+        font-size: 28px;
+        text-align: center;       
+    }
+   
+    main .items .paragraphe .start button {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
