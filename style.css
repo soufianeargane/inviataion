@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.container{width: 90%; margin: 2% auto;}
+body{font-family: 'poppins';}
+*{box-sizing: border-box;font-family: 'Poppins';}
+/*oumaima*/
+main .items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .items .picture{
+    width: 370px;
+}
+main .items .paragraphe .Titre1 {
+    font-size: 40px;
+    text-align: center;
+    
+}
+main .items .paragraphe p ion-icon{
+    color: white;
+    border-radius: 50%;
+    background-image :linear-gradient(to right, #FB7B30,#A831A5);
+
+}
+main .items .paragraphe p .Titre{
+padding-left: 15px;
+
+}
+main .items .paragraphe .para {
+    margin-bottom: 50px;
+
+}
+main .items .paragraphe .start button{
+    background-image :linear-gradient(to right, #FB7B30,#A831A5);
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    
+}
+main .items .paragraphe .start{
+    margin: auto;
+    text-align: center;
+}
+
