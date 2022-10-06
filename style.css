@@ -3,7 +3,7 @@
 body{font-family: 'poppins';}
 *{box-sizing: border-box;font-family: 'Poppins';}
 
-/* Footer Saad */
+/*Up Footer Saad */
 /*gallery footer*/
 footer .gallery{
     display: grid;
@@ -15,7 +15,6 @@ footer .gallery{
 footer .gallery img{
     width: 100%;
 }
-
 footer .titleLastFooter{
     text-align: center;
     font-size: 14px;
@@ -55,16 +54,11 @@ footer ul li,a{
     color: #fff;
     padding-bottom: 5px;
 }
+/* End Footer Saad  */
 
-/* Fin Footer Saad  */
-
-/* Tablete */
+/* Res Tablete */
 @media screen and (min-width:769px) and (max-width:1024px){
-    /* SAAD */
-     /*galery footer*/
-     /* footer .gallery{
-        grid-template-columns: repeat(auto-fit,minmax(1px,1fr));
-    } */
+    /*Res SAAD */
     /*link footer*/
     footer .items{
         grid-template-columns: none;
@@ -77,16 +71,15 @@ footer ul li,a{
     footer .icons_Social{
         padding-bottom: 30px;
     }
-    /*Fin SAAD */
+    /*Res Fin SAAD */
 }
-/* Mobile */
+/* Res Mobile */
 @media screen and (max-width:768px){
     .container{
         width: 100%;
         transition:1s;
     }
-    /* SAAD */
-
+    /*Res SAAD */
     /*galery footer*/
     footer .gallery{
         grid-template-columns: none;
@@ -108,5 +101,5 @@ footer ul li,a{
         font-size: 10px;
         padding-top:14px;
     }
-    /*Fin SAAD */
+    /*Fin Res SAAD */
 }
