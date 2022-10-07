@@ -1,4 +1,493 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .container{width: 90%; margin: 2% auto;}
-body{font-family: 'poppins';}
 *{box-sizing: border-box;font-family: 'Poppins';}
+/* start nav */
+.nav {display: flex; justify-content: space-between; align-items: center; position: relative;}
+.nav p{ font-size: 19px; font-weight: 600;}
+.nav .links{list-style: none; display: flex;  align-items: center;}
+.nav .links li{margin-right: 30px; display: flex; align-items: center; }
+.nav .links li a {text-decoration: none; color: black;}
+ .nav .links li .icon{margin-left: 5px;} 
+.nav .log { width: 150px; }
+.nav .log ul{list-style: none; display: flex; padding-left: 0; justify-content: space-between; width: 100%;}
+.nav .log ul a {text-decoration: none;}
+.nav .log ul .login{color: black; font-weight: 400;}
+.nav .log ul .signin{color: white; font-weight: 400; background-color: black; padding: 5px 10px; border-radius: 5px;}
+nav span{width: 30px; height: 30px; display: none; z-index: 100;}
+nav span ion-icon{width: 100%; height: 100%;} 
+
+/*Start header*/
+.header{width: 100%; background-color: black; color: white; padding: 5%; position: relative;}
+.header p{width: 50%;}
+.header p span{font-weight: 600;}
+.header .search{display: flex;}
+.header .search .form{position: relative; margin-right: 10px; display: flex; align-items: center;}
+.header .search .form input{padding: 5px 40px;  width: 100%; height: 100%; outline: none;border-radius: 5px;}
+.header .search .form ion-icon:first-of-type {position: absolute; z-index: 1; color: black; margin: 6px 5px; font-size: 20px;}
+.header .search .form ion-icon:last-of-type{position: absolute; right: 0; z-index: 10; color: black;}
+.header .search .button {background: linear-gradient(90deg, rgba(253,111,29,1) 0%, rgba(131,58,180,1) 100%); color: white; padding: 0 20px; border-radius: 5px; height: 39px;}
+.header .image{position: absolute; z-index: 11111; right: 0; top: -15px; height: 340px;}
+.header .image img{height: 100%; width: 100%;}
+
+/* tablette */
+@media(max-width:1070px){
+    .container{width: 98%; margin: auto;}  
+    .links{padding: 0;}
+    .header .image{display: none;} 
+    .header h1 {
+        text-align: center;
+    }
+    .header p {
+        width: 100%;
+        text-align: center;
+    }
+    .header .search {
+        justify-content: center;
+    }
+} 
+
+/* mobile */
+@media(max-width:870px){
+
+    /*nav*/
+    nav{padding: 5px;}
+    .nav span{display: block; order: 4;}
+    .nav .log {order: 2;}
+    .nav .links{display: none;}
+    .nav span:hover + .links{
+        display: block;
+        justify-content: space-between;
+        position: absolute;
+        top: 30px;
+        z-index: 100000;
+        padding: 10px;
+        width: 100%;
+        background: linear-gradient(0deg, rgba(19,17,17,0.9023984593837535) 7%, rgba(131,131,131,1) 75%);  
+    }
+    .nav .links li{margin: 0; border-bottom: 1px solid white;
+        padding-bottom: 20px;    margin-top: 14px;}
+        .nav .links li:last-of-type{border: none;}
+        .nav .links li a{color: white;}
+        /*header*/
+    .header .image{display: none;}
+    .header h1 {
+        text-align: center;
+    }
+    .header p {
+        width: 100%;
+        text-align: center;
+    }
+    header {width: 100%;}
+    .container{width: 100%; margin: 0;} 
+    .header .search {
+        flex-direction: column;
+        width: 220px; margin: auto;
+        justify-content: center;
+    }
+    .header .search .form{margin: 0;}
+}
+
+/*oumaima*/
+main{margin-top: 70px; margin-bottom: 70px;}
+main .items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .items .picture{
+    width: 25%;
+}
+main .items .paragraphe .Titre1 {
+    font-size: 35px;
+    text-align: center;
+    
+}
+main .items .paragraphe p ion-icon{
+    color: white;
+    border-radius: 50%;
+    background-image :linear-gradient(to right, #FB7B30,#A831A5);
+
+}
+main .items .paragraphe p .Titre{
+    padding-left: 15px;
+
+}
+main .items .paragraphe .para {
+    margin-bottom: 40px;
+
+}
+main .items .paragraphe .start button{
+    background-image :linear-gradient(to right, #FB7B30,#A831A5);
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    
+}
+main .items .paragraphe .start{
+    margin: auto;
+    text-align: center;
+}
+main .items .paragraphe .para .decoration {
+text-decoration: underline;
+}
+/*Fin Oumaima*/
+
+/*media query Oumaima*/
+/*for Mobile */
+@media (max-width:600px){
+    main .items .picture{
+        display: none;
+    }
+    main .items .paragraphe{
+        font-size: 20px;
+        text-align: center;
+        
+    }
+   
+    main .items .paragraphe .start button{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media (min-width:601px) and (max-width:1200px){
+    
+    main .items{
+        justify-content: center;
+    }
+    main .items .picture {
+        display: none;
+    }
+    
+    main .items .paragraphe {
+        font-size: 28px;
+        text-align: center;       
+    }
+   
+    main .items .paragraphe .start button {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+/* anans */
+
+#my-container
+{
+    position: relative;
+    background-color: black;
+    padding: 5%;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+}
+
+#photo
+{
+    position:absolute;
+    margin-bottom: 20%;
+    z-index: 1;
+    right: 0;
+    top: -15%;
+    width:   58%;
+
+}
+p.paragraph
+{
+    margin: 1%;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    
+}
+.google-button
+{
+    display: flex;
+}
+div.button-section
+{
+    /* position:absolute; */
+     
+    height: 50px; 
+    display: flex;
+    bottom: 2%;
+    left:0.5%;
+   
+    
+}
+button.button1
+ {
+
+    display: inline-flex;
+    width: 240px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+.google-button .button1
+{
+    background-image: linear-gradient(to right,orange,purple);
+    color: white;
+    font-weight: 500;
+    width: 250px;
+    margin-left: 4%;
+}
+.logo-google
+{
+    
+    width: 8%;
+    height: 8x;
+}
+.checkpng
+{
+   width: 40px;
+}
+
+div.first
+{
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    top: 40%;
+}
+ .perog
+{
+    color: white;
+    font-size: larger;
+    
+}
+.all1
+{
+    margin-top: 2%;
+}
+.checkpng1
+{
+    width: 4%;
+    margin: 1%;
+}
+div.chekbuttons
+{
+ top:12%;
+ margin-right: 2%;
+}
+
+@media(max-width : 1070px) 
+
+{
+    div .first{justify-content: center;}
+    div.button-section{width: 100%; justify-content: center;   margin-top: 8px;}
+    #photo
+{
+   display: none;
+}
+#my-container
+{
+    background-color: black;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    margin-top: 4%;
+}
+.logo-google
+{
+    
+    width: 30px;
+    height: 30px;
+}
+.paragraph
+{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-align: center;
+    
+}
+div.button-section
+{
+    height: 50px;
+    display: flex;
+    bottom: 10%;  
+    align-content: center;
+    
+}
+.button1 :nth-child(1)
+ {
+    margin-right: 30px;
+}
+.paragraph
+{
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-weight: 600;  
+}
+}
+/* ///////////////////////////////////////////////////////// */
+@media(max-width : 755px) 
+{
+.container{width: 100%;}
+body{font-family: 'poppins';}
+div .button-section
+{
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+}
+
+.button-section button,
+.button .google-button{
+    margin: 0 auto;
+}
+.button-section .button1 :nth-child(2)
+{
+    width: 12px;
+    margin: 5px 0;
+}
+div.all1
+{   
+    font-size: larger;
+    margin-left: 5%;
+    justify-content: center;
+    align-items: center;
+}
+p.paragraph
+{
+    
+    margin-right: 2%;
+    margin-left: 4%;
+    font-weight:1000;
+}
+ button.button1
+ {
+    font-size: 19px;
+    margin-top: 7px;
+    margin-left: 0%;
+    margin-right: 0%;
+ }
+ div.first
+ {
+    font-size: smaller;
+ }
+
+}
+@media(max-width : 300px)
+{
+    div.first
+ {
+    font-size: x-small;
+ }
+}
+
+/*Up Footer Saad */
+/*gallery footer*/
+footer {
+    margin-top: 110px;
+}
+footer .gallery{
+    display: grid;
+    padding: 10px;
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer .gallery img{
+    width: 100%;
+}
+footer .titleLastFooter{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 12px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* link footer */
+footer .items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+}
+footer .items .col{
+    width: 80%;
+}
+footer .items .col2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    justify-content: end;
+}
+footer .icons_Social .icons{
+    padding: 5px;
+    background-color: #fff;
+    color: #000;
+}
+footer .f_paragrapah{
+    line-height: 25px;
+}
+footer ul li,a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 5px;
+}
+/* End Footer Saad  */
+
+/* Res Tablete */
+@media screen and (min-width:769px) and (max-width:1024px){
+    /*Res SAAD */
+    /*link footer*/
+    footer .items{
+        grid-template-columns: none;
+        padding: 20px;
+    }
+    footer .items .col{
+        text-align: center;
+        margin: auto;
+    }
+    footer .icons_Social{
+        padding-bottom: 30px;
+    }
+    /*Res Fin SAAD */
+}
+/* Res Mobile */
+@media screen and (max-width:768px){
+    .container{
+        width: 100%;
+        transition:1s;
+    }
+    /*Res SAAD */
+    /*galery footer*/
+    footer .gallery{
+        grid-template-columns: none;
+    }
+    /*link footer*/
+    footer .items{
+        grid-template-columns: none;
+        padding: 20px;
+    }
+    footer .items .col{
+        text-align: center;
+        margin: auto;
+    }
+    footer .icons_Social{
+        padding-bottom: 30px;
+    }
+    footer .titleLastFooter{
+        text-align: center;
+        font-size: 10px;
+        padding-top:14px;
+    }
+    /*Fin Res SAAD */
+}

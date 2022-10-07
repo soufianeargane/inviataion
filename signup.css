@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{box-sizing: border-box;font-family: 'Poppins';}
+
+
+section{display: flex; align-items: center; justify-content: center; height: 100vh;}
+.section{display: flex; justify-content: center; ;}
+section .img{width: 340px;height: 500px;margin-right: 30px; box-shadow: 9px 21px 86px -10px rgba(153,153,153,0.84);}
+section .img img{width: 100%; height: 100%;}
+
+section .form{
+    
+    padding:0 10px;
+    padding-top:20%;
+    box-shadow: -41px 21px 86px -10px rgba(153,153,153,0.84);
+    width: 300px;
+    
+}
+section .form h6{
+    text-align: center;
+    margin: 0;
+    font-size: 100%;
+}
+section .form h5{text-align: center;  color: rgb(58, 202, 221);   font-size: 30px;
+    margin-bottom: 0;}
+
+section .form .email,
+section .form .password{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgb(184, 178, 178);
+    width:95%;margin: auto;
+    margin-top: 10px;
+    font-size: 13px;
+}
+input{
+    width: 100%;
+    height: 100%;
+    padding:5px 10px;
+    padding-left: 30px;
+    border:none;outline:none;
+}
+
+
+section .form .email span,
+section .form .password span{
+    position: absolute;
+    left: 30px;
+    color: rgba(0, 0, 0, 0.384);
+    font-size: 1em;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+
+.section .form .email input:focus + span,
+.section .form .password input:focus + span,
+.section .form .email input:valid + span,
+.section .form .password input:valid + span{
+    color: rgb(58, 202, 221);
+    transform: translateX(-17px) translateY(-15px);
+    font-size: 0.85em;
+    padding: 0 10px;
+    background-color: #FFF;
+}
+.section .form .email input:focus,
+.section .form .password input:focus {
+    border: 1px solid rgb(58, 202, 221);
+} 
+
+.section .form .email input:focus ~ ion-icon,
+.section .form .password input:focus ~ ion-icon{
+    color: rgb(58, 202, 221) ;
+}
+
+ion-icon{
+    position: absolute;
+    margin: 0 5px;
+    z-index: 1;
+}
+button{ width: 95%; margin: 27px 2.5% 0 2.5%; background: linear-gradient(90deg, rgba(253,111,29,1) 0%, rgba(131,58,180,1) 100%); border-radius: 10px; border: none; padding: 5px 0; cursor: pointer; color: white;}
+.form .link{margin: 10px 2.5%; display: flex; justify-content: space-between;}
+.form .link a {color: black; font-size: 13px;}
+
+@media (max-width: 679px){
+    .section .img{display: none;}
+    section .form{padding: 10% 10px 30% 10px; }
+}
+
+@media (max-width: 300px){
+    
+    section .form{width: 98%; margin: auto;}
+    .form .link{margin: 10px 2.5%; display: flex; align-items: center; flex-direction: column;}
+}
