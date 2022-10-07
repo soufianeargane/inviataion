@@ -8,7 +8,7 @@ body{font-family: 'poppins';}
 footer .gallery{
     display: grid;
     padding: 10px;
-    margin: 0 auto;
+    margin: auto;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -38,7 +38,6 @@ footer .items .col{
 footer .items .col2{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-    justify-content: end;
 }
 footer .icons_Social .icons{
     padding: 5px;
