@@ -7,7 +7,7 @@ body{font-family: 'poppins';}
 {
     position: relative;
     background-color: black;
-    height: 400px;
+    height: 280px;
     border-radius: 10px;
     border-color: black;
     border-style: solid;
@@ -21,15 +21,12 @@ body{font-family: 'poppins';}
     z-index: 1;
     right: 0;
     top: -15%;
-    height: 500px;
-    width: 500px;
-    
-    
+    width:   60%;
 
 }
 p.paragraph
 {
-    margin: 2%;
+    margin: 1%;
     font-size: 30px;
     color: rgb(255, 255, 255);
     font-weight: 600;
@@ -42,18 +39,19 @@ p.paragraph
 div.button-section
 {
     position:absolute;
-    width: fit-content;
+     
     height: 50px; 
     display: flex;
-    bottom: 10%;
-    margin-right: 30%;
+    bottom: 2%;
+    left:0.5%;
+   
     
 }
 button.button1
  {
 
     display: inline-flex;
-    width: 250px;
+    width: 240px;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
@@ -80,20 +78,15 @@ button.button1
 {
    width: 40px;
 }
-.chekbuttons
-{
-    position: absolute;
-    display: block;
-    bottom: 25%;
-    left: 3%;
-   
-}
+
 div.first
 {
     display: flex;
     align-items: center;
     margin-left: 1%;
-    top: 20%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    top: 40%;
 }
  .perog
 {
@@ -112,9 +105,10 @@ div.first
 }
 div.chekbuttons
 {
-    bottom: 35%;
-    right: 11%;
+ top:12%;
+ margin-right: 2%;
 }
+
 
 @media(max-width : 755px) 
 {
@@ -136,11 +130,12 @@ div.button-section
     width: 12px;
     margin: 5px 0;
 }
-.all1
+div.all1
 {   
     font-size: larger;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: 5%;
+    justify-content: center;
+    align-items: center;
 }
 p.paragraph
 {
@@ -227,9 +222,5 @@ div.button-section
     color: rgb(255, 255, 255);
     font-weight: 600;
     
-}
-.all1
-{
-    padding: -5%;
 }
 }
