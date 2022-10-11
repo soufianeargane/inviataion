@@ -422,7 +422,7 @@ footer .gallery{
     display: grid;
     padding: 10px;
     margin: 0 auto;
-    grid-gap: 10px;
+    gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 footer .gallery img{
@@ -439,7 +439,7 @@ footer .titleLastFooter{
 /* link footer */
 footer .items{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     background-color: #000;
     color: #fff;
@@ -474,7 +474,6 @@ footer ul li,a{
     /*Res SAAD */
     /*link footer*/
     footer .items{
-        grid-template-columns: none;
         padding: 20px;
     }
     footer .items .col{
