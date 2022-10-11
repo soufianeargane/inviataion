@@ -219,7 +219,6 @@ text-decoration: underline;
 #photo
 {
     position:absolute;
-    margin-bottom: 20%;
     z-index: 1;
     right: 0;
     top: -20px;
