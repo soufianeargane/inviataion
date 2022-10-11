@@ -222,8 +222,8 @@ text-decoration: underline;
     margin-bottom: 20%;
     z-index: 1;
     right: 0;
-    top: -15%;
-    width:   58%;
+    top: -20px;
+    width:   59%;
 
 }
 p.paragraph
@@ -241,7 +241,6 @@ p.paragraph
 div.button-section
 {
     /* position:absolute; */
-     
     height: 50px; 
     display: flex;
     bottom: 2%;
