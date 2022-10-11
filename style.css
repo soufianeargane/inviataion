@@ -29,6 +29,19 @@ nav span ion-icon{width: 100%; height: 100%;}
 .header .image{position: absolute; z-index: 11111; right: 0; top: -15px; height: 340px;}
 .header .image img{height: 100%; width: 100%;}
 
+
+.companies{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.companies div{
+    width: 140px;
+    margin-bottom: 40px;
+}
+.companies div img{width: 100%;}
 /* tablette */
 @media(max-width:1070px){
     .container{width: 98%; margin: auto;}  
@@ -43,6 +56,10 @@ nav span ion-icon{width: 100%; height: 100%;}
     }
     .header .search {
         justify-content: center;
+    }
+    .companies div{
+        width: 29%;
+        padding: 10px;
     }
 } 
 
@@ -87,7 +104,15 @@ nav span ion-icon{width: 100%; height: 100%;}
         justify-content: center;
     }
     .header .search .form{margin: 0;}
+    .companies{padding: 10px;}
+    .companies div{
+        width: 45%;
+        padding: 5px;
+    }
 }
+
+
+
 
 /*oumaima*/
 main{margin-top: 70px; margin-bottom: 70px;}
